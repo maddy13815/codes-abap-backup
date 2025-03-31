@@ -1,0 +1,5 @@
+@EndUserText.label: 'Product Hierarchy V4'
+define service ZSRV_PROD_H {
+  expose ZI_PRODUCT_HIERARCHY     as Product_H;
+  expose ZI_PRODUCT_HIERARCHY_SUB as Product_HSUB;
+}

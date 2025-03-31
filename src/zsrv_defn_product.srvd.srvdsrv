@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for product'
+define service ZSRV_DEFN_PRODUCT {
+  expose ZI_PRODUCT_CUSTOM;
+}

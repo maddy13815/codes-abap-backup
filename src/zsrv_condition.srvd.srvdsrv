@@ -1,0 +1,15 @@
+@EndUserText.label: 'condition'
+define service ZSRV_CONDITION {
+  expose ZI_CONDITION_5          as condition;
+  expose ZI_CNDN_BUSVOL_5        as cndn;
+  expose ZI_CNDN_RECORD_5        as record;
+  expose ZRGM_I_BASELINE_WEEK    as baseline;
+  expose ZRGM_I_BASELINE_MONTH   as baslinemonth;
+  expose ZI_CONDITION_7          as condition_fetch;
+  expose ZI_CNDN_BUSVOL_7        as busvol_fetch;
+  expose ZI_CNDN_RECORD_7        as record_fetch;
+  expose ZRGM_I_WEEK_CREATE_H    as baselinecreateh;
+  expose ZRGM_I_WEEK_CREATE_ITEM as baselinecreatei;
+  expose ZRGM_I_MONTH_CREATE_H   as baselinemonthh;
+  expose ZRGM_I_MONTH_ITEM       as baselinemonthi;
+}

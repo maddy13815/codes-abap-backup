@@ -1,0 +1,27 @@
+unmanaged implementation in class zbp_i_condition_4 unique;
+//strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZI_CONDITION_4 //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Customer;
+  association _CndnContrBusVolSelCriteria { create; }
+}
+
+define behavior for ZI_CNDN_BUSVOL //alias <alias_name>
+//late numbering
+lock dependent by _Header
+authorization dependent by _Header
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) SalesOrganization, Customer, BusVolFieldCombnType;
+  association _Header;
+}

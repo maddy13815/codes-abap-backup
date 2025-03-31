@@ -1,0 +1,11 @@
+@EndUserText.label: 'service definition for customer'
+define service ZSRV_DEFN_CUSTOMER {
+  expose ZI_CUSTOMER_CUSTOM       as Customer;
+  expose ZI_PRODUCT_CUSTOM        as Product;
+  expose ZI_CONDITION_4           as Condition4;
+  expose ZI_CNDN_BUSVOL           as CndnContrBusVolSelCriteria;
+  expose ZI_PRODUCT_HIERARCHY     as Product_H;
+  expose ZI_PRODUCT_HIERARCHY_SUB as Product_HSUB;
+  expose ZI_PRODUCT_LIST_PRICE    as Product_List;
+  expose ZI_PRODUCT_VOLUME_SPEND  as Product_volume;
+}
